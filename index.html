@@ -18,7 +18,7 @@
       var rABS = true; // true: readAsBinaryString ; false: readAsArrayBuffer
       function handleFile1(e) {
         var files = e.target.files, f = files[0];
-	console.log(f);
+	      console.log(f);
         var reader = new FileReader();
         reader.onload = function(e) {
           var data = e.target.result;
@@ -45,6 +45,17 @@
           var worksheet = workbook.Sheets[first_sheet_name];
           console.log(XLSX.utils.sheet_to_json(worksheet));
           sheetobj2=XLSX.utils.sheet_to_json(worksheet)
+          
+          var k = 'REGISTER NO.';
+          for(var i =0 ;i<sheetobj2.length;i++){
+            for(var j=0 ; j<sheetobj1.length;j++){
+              var a = sheetobj2[Object.keys(sheetobj2)[i]];
+              var b = sheetobj1[Object.keys(sheetobj1)[j]];
+              if(a[k] == b[k])
+                console.log(a[k]);
+            }
+          }
+
           // worksheet=XLSX.utils.json_to_sheet(worksheet);
           // workbook.Sheets[first_sheet_name]=worksheet;
           // XLSX.writeFile(workbook, 'out.xlsx');
@@ -53,6 +64,7 @@
       }
       var sheet1 = document.getElementById('sheet1');
       var sheet2 = document.getElementById('sheet2');
+      
       sheet1.addEventListener('input', handleFile1, false);
       sheet2.addEventListener('input', handleFile2, false);
     </script>
