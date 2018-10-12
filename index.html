@@ -52,14 +52,18 @@
           console.table(sheetobj1);
           console.table(sheetobj2);
           var k = 'REGISTER NO.';
+          
+          var arr = [];
           for(var i =0 ;i<sheetobj2.length;i++){
-            for(var j=0 ; j<sheetobj1.length;j++){
-              var a = sheetobj2[Object.keys(sheetobj2)[i]];
-              var b = sheetobj1[Object.keys(sheetobj1)[j]];
-              if(a[k] == b[k])
-                console.table(sheetobj1[Object.keys(sheetobj1)[j]]);
-            }
+            var a = sheetobj2[Object.keys(sheetobj2)[i]]; 
+            arr.push(a[k]);
           }
+          for(var i =0 ;i<sheetobj1.length;i++){
+            var b = sheetobj1[Object.keys(sheetobj1)[i]]; 
+            if(arr.includes(b[k]))
+              console.table(sheetobj1[Object.keys(sheetobj1)[i]]);
+          }
+          
 
           // worksheet=XLSX.utils.json_to_sheet(worksheet);
           // workbook.Sheets[first_sheet_name]=worksheet;
