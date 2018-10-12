@@ -46,13 +46,15 @@
           console.log(XLSX.utils.sheet_to_json(worksheet));
           sheetobj2=XLSX.utils.sheet_to_json(worksheet)
           
+          console.table(sheetobj1);
+          console.table(sheetobj2);
           var k = 'REGISTER NO.';
           for(var i =0 ;i<sheetobj2.length;i++){
             for(var j=0 ; j<sheetobj1.length;j++){
               var a = sheetobj2[Object.keys(sheetobj2)[i]];
               var b = sheetobj1[Object.keys(sheetobj1)[j]];
               if(a[k] == b[k])
-                console.log(a[k]);
+                console.table(sheetobj1[Object.keys(sheetobj1)[j]]);
             }
           }
 
