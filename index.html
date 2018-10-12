@@ -1,8 +1,11 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 
   </head>
   <body>
+    <div id="app"></div>
     <form id="sheets">
       <input type="file" id="sheet1"/>
       <input type="file" id="sheet2"/>
@@ -45,7 +48,7 @@
           var worksheet = workbook.Sheets[first_sheet_name];
           console.log(XLSX.utils.sheet_to_json(worksheet));
           sheetobj2=XLSX.utils.sheet_to_json(worksheet)
-          
+
           console.table(sheetobj1);
           console.table(sheetobj2);
           var k = 'REGISTER NO.';
@@ -66,9 +69,10 @@
       }
       var sheet1 = document.getElementById('sheet1');
       var sheet2 = document.getElementById('sheet2');
-      
+
       sheet1.addEventListener('input', handleFile1, false);
       sheet2.addEventListener('input', handleFile2, false);
     </script>
+    <script src="bundle.js"></script>
   </body>
 </html>
