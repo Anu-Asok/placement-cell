@@ -380,7 +380,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.sheetsManager = void 0;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _extends3 = _interopRequireDefault(__webpack_require__(4));
 
@@ -388,11 +388,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -839,27 +839,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports) {
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-module.exports = _defineProperty;
-
-/***/ }),
-/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(47);
@@ -877,7 +856,7 @@ function _possibleConstructorReturn(self, call) {
 module.exports = _possibleConstructorReturn;
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports) {
 
 function _getPrototypeOf(o) {
@@ -890,7 +869,7 @@ function _getPrototypeOf(o) {
 module.exports = _getPrototypeOf;
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(165);
@@ -911,6 +890,27 @@ function _inherits(subClass, superClass) {
 }
 
 module.exports = _inherits;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+module.exports = _defineProperty;
 
 /***/ }),
 /* 14 */
@@ -2704,7 +2704,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.specialProperty = void 0;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _extends3 = _interopRequireDefault(__webpack_require__(4));
 
@@ -2783,11 +2783,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -3387,7 +3387,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.CHANNEL = void 0;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _propTypes = _interopRequireDefault(__webpack_require__(3));
 
@@ -5930,7 +5930,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -5938,11 +5938,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -31457,7 +31457,7 @@ exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -50942,7 +50942,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = createMixins;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _extends3 = _interopRequireDefault(__webpack_require__(4));
 
@@ -54419,17 +54419,17 @@ exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -54881,7 +54881,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -55041,7 +55041,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.styles = void 0;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -55156,7 +55156,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -55260,7 +55260,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -55612,7 +55612,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.styles = void 0;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -56014,7 +56014,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -56022,11 +56022,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(35));
 
@@ -56633,11 +56633,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(35));
 
@@ -57388,7 +57388,7 @@ exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -57396,11 +57396,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -57641,7 +57641,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -58016,7 +58016,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -58221,11 +58221,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -58417,7 +58417,7 @@ var Body = function (_React$Component) {
           'Click for preview'
         ),
         _react2.default.createElement(_preview2.default, { result: this.state.result }),
-        _react2.default.createElement(_download2.default, null)
+        _react2.default.createElement(_download2.default, { objects: this.state.result })
       );
     }
   }]);
@@ -67897,6 +67897,12 @@ var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _xlsx = __webpack_require__(82);
+
+var _xlsx2 = _interopRequireDefault(_xlsx);
+
+var _fileSaver = __webpack_require__(287);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67915,11 +67921,41 @@ var Download = function (_React$Component) {
   }
 
   _createClass(Download, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      var arr = this.props.objects;
+      console.log(arr);
+
+      var wb = _xlsx2.default.utils.book_new();
+      wb.props = {
+        Title: "SheetJS",
+        Subject: "Final List",
+        Author: "Placement Cell",
+        CreatedDate: new Date(2018, 10, 13)
+      };
+
+      wb.SheetNames.push("Final Sheet");
+      var ws = _xlsx2.default.utils.json_to_sheet(this.props.objects);
+      wb.Sheets["Final Sheet"] = ws;
+
+      var wbout = _xlsx2.default.write(wb, { bookType: 'xlsx', type: 'binary' });
+
+      function s2ab(s) {
+        var buf = new ArrayBuffer(s.length);
+        var view = new Uint8Array(buf);
+        for (var i = 0; i < s.length; i++) {
+          view[i] = s.charCodeAt(i) & 0xFF;
+        }return buf;
+      }
+
+      (0, _fileSaver.saveAs)(new Blob([s2ab(wbout)], { type: "application/octet-stream" }), 'test.xlsx');
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'button',
-        { id: 'download' },
+        { id: 'download', onClick: this.handleClick.bind(this) },
         'Download'
       );
     }
@@ -68393,11 +68429,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -68545,11 +68581,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -68656,7 +68692,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -68893,11 +68929,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -69031,11 +69067,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -69360,11 +69396,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -69856,7 +69892,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.styles = void 0;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -69994,7 +70030,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -70002,11 +70038,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -70547,7 +70583,7 @@ exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -70557,11 +70593,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -71079,11 +71115,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -71393,11 +71429,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -72005,7 +72041,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -72013,11 +72049,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(35));
 
@@ -72542,11 +72578,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -72689,11 +72725,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -73328,7 +73364,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -73467,11 +73503,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -73671,11 +73707,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -73935,11 +73971,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -74197,7 +74233,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -74205,11 +74241,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -74467,7 +74503,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.styles = void 0;
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
@@ -75006,11 +75042,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -75242,7 +75278,7 @@ exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(4));
 
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(10));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(13));
 
 var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(5));
 
@@ -75515,11 +75551,11 @@ var _classCallCheck2 = _interopRequireDefault(__webpack_require__(7));
 
 var _createClass2 = _interopRequireDefault(__webpack_require__(8));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(11));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(10));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(12));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(11));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(13));
+var _inherits2 = _interopRequireDefault(__webpack_require__(12));
 
 var _react = _interopRequireDefault(__webpack_require__(2));
 
@@ -75609,6 +75645,180 @@ var _default = (0, _withStyles.default)(styles, {
 
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {/*
+* FileSaver.js
+* A saveAs() FileSaver implementation.
+*
+* By Eli Grey, http://eligrey.com
+*
+* License : https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md (MIT)
+* source  : http://purl.eligrey.com/github/FileSaver.js
+*/
+
+
+// The one and only way of getting global scope in all enviorment
+// https://stackoverflow.com/q/3277182/1008999
+var _global = (function () {
+// some use content security policy to disable eval
+  try {
+    return Function('return this')() || (42, eval)('this')
+  } catch (e) {
+    // every global should have circular reference
+    // used for checking if someone writes var window = {}; var self = {}
+    return typeof window === 'object' && window.window === window ? window
+    : typeof self === 'object' && self.self === self ? self
+    : typeof global === 'object' && global.global === global ? global : this
+  }
+})()
+
+function bom (blob, opts) {
+  if (typeof opts === 'undefined') opts = { autoBom: false }
+  else if (typeof opts !== 'object') {
+    console.warn('Depricated: Expected third argument to be a object')
+    opts = { autoBom: !opts }
+  }
+
+  // prepend BOM for UTF-8 XML and text/* types (including HTML)
+  // note: your browser will automatically convert UTF-16 U+FEFF to EF BB BF
+  if (opts.autoBom && /^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(blob.type)) {
+    return new Blob([String.fromCharCode(0xFEFF), blob], { type: blob.type })
+  }
+  return blob
+}
+
+function download (url, name, opts) {
+  var xhr = new XMLHttpRequest()
+  xhr.open('GET', url)
+  xhr.responseType = 'blob'
+  xhr.onload = function () {
+    saveAs(xhr.response, name, opts)
+  }
+  xhr.onerror = function () {
+    console.error('could not download file')
+  }
+  xhr.send()
+}
+
+function corsEnabled (url) {
+  var xhr = new XMLHttpRequest()
+  // use sync to avoid popup blocker
+  xhr.open('HEAD', url, false)
+  xhr.send()
+  return xhr.status >= 200 && xhr.status <= 299
+}
+
+// `a.click()` don't work for all browsers (#465)
+function click(node) {
+  try {
+    node.dispatchEvent(new MouseEvent('click'))
+  } catch (e) {
+    var evt = document.createEvent('MouseEvents')
+    evt.initMouseEvent('click', true, true, window, 0, 0, 0, 80,
+                          20, false, false, false, false, 0, null)
+    node.dispatchEvent(evt)
+  }
+}
+
+var saveAs = _global.saveAs ||
+// probably in some web worker
+(typeof window !== 'object' || window !== _global)
+  ? function saveAs () { /* noop */ }
+
+// Use download attribute first if possible (#193 Lumia mobile)
+: 'download' in HTMLAnchorElement.prototype
+? function saveAs (blob, name, opts) {
+  var URL = _global.URL || _global.webkitURL
+  var a = document.createElement('a')
+  name = name || blob.name || 'download'
+
+  a.download = name
+  a.rel = 'noopener' // tabnabbing
+
+  // TODO: detect chrome extensions & packaged apps
+  // a.target = '_blank'
+
+  if (typeof blob === 'string') {
+    // Support regular links
+    a.href = blob
+    if (a.origin !== location.origin) {
+      corsEnabled(a.href)
+        ? download(blob, name, opts)
+        : click(a, a.target = '_blank')
+    } else {
+      click(a)
+    }
+  } else {
+    // Support blobs
+    a.href = URL.createObjectURL(blob)
+    setTimeout(function () { URL.revokeObjectURL(a.href) }, 4E4) // 40s
+    setTimeout(function () { click(a) }, 0)
+  }
+}
+
+// Use msSaveOrOpenBlob as a second approch
+: 'msSaveOrOpenBlob' in navigator
+? function saveAs (blob, name, opts) {
+  name = name || blob.name || 'download'
+
+  if (typeof blob === 'string') {
+    if (corsEnabled(blob)) {
+      download(blob, name, opts)
+    } else {
+      var a = document.createElement('a')
+      a.href = blob
+      a.target = '_blank'
+      setTimeout(function () { clikc(a) })
+    }
+  } else {
+    navigator.msSaveOrOpenBlob(bom(blob, opts), name)
+  }
+}
+
+// Fallback to using FileReader and a popup
+: function saveAs (blob, name, opts, popup) {
+  // Open a popup immediately do go around popup blocker
+  // Mostly only avalible on user interaction and the fileReader is async so...
+  popup = popup || open('', '_blank')
+  if (popup) {
+    popup.document.title =
+    popup.document.body.innerText = 'downloading...'
+  }
+
+  if (typeof blob === 'string') return download(blob, name, opts)
+
+  var force = blob.type === 'application/octet-stream'
+  var isSafari = /constructor/i.test(_global.HTMLElement) || _global.safari
+  var isChromeIOS = /CriOS\/[\d]+/.test(navigator.userAgent)
+
+  if ((isChromeIOS || (force && isSafari)) && typeof FileReader === 'object') {
+    // Safari doesn't allow downloading of blob urls
+    var reader = new FileReader()
+    reader.onloadend = function () {
+      var url = reader.result
+      url = isChromeIOS ? url : url.replace(/^data:[^;]*;/, 'data:attachment/file;')
+      if (popup) popup.location.href = url
+      else location = url
+      popup = null // reverse-tabnabbing #460
+    }
+    reader.readAsDataURL(blob)
+  } else {
+    var URL = _global.URL || _global.webkitURL
+    var url = URL.createObjectURL(blob)
+    if (popup) popup.location = url
+    else location.href = url
+    popup = null // reverse-tabnabbing #460
+    setTimeout(function () { URL.revokeObjectURL(url) }, 4E4) // 40s
+  }
+}
+
+module.exports = _global.saveAs = saveAs.saveAs = saveAs
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(21)))
 
 /***/ })
 /******/ ]);

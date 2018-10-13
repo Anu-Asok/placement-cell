@@ -53,7 +53,7 @@ export default class Body extends React.Component{
         <Form getEligibility={this.getEligibility.bind(this)} getApplied={this.getApplied.bind(this)}/>
         <button ref="generate" disabled={!(this.state.eligibility && this.state.applied)} onClick={this.handleClick.bind(this)}>Click for preview</button>
         <Preview result={this.state.result} />
-        <Download />
+        <Download objects={this.state.result}/>
       </div>
     );
   }
