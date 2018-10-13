@@ -42,26 +42,31 @@
           console.table(sheetobj1);
           console.table(sheetobj2);
           var k = 'REGISTER NO.';
-
-          var arr = [];
+          var obj = {};
+          for(var i =0 ;i<sheetobj1.length;i++){
+            var a = sheetobj1[Object.keys(sheetobj1)[i]];
+            var key = a[k];
+            obj[key] = a;     
+          }
           for(var i =0 ;i<sheetobj2.length;i++){
             var a = sheetobj2[Object.keys(sheetobj2)[i]];
-            arr.push(a[k]);
-          }
-          for(var i =0 ;i<sheetobj1.length;i++){
-            var b = sheetobj1[Object.keys(sheetobj1)[i]];
-            if(arr.includes(b[k]))
-              console.table(sheetobj1[Object.keys(sheetobj1)[i]]);
-          }
-
-
+            var b = a[k];
+            if(obj[b])
+              console.table(obj[b]);
+          }  
+          
           // worksheet=XLSX.utils.json_to_sheet(worksheet);
           // workbook.Sheets[first_sheet_name]=worksheet;
           // XLSX.writeFile(workbook, 'out.xlsx');
         };
         if(rABS) reader.readAsBinaryString(f); else reader.readAsArrayBuffer(f);
       }
-    </script>
+      var sheet1 = document.getElementById('sheet1');
+      var sheet2 = document.getElementById('sheet2');
+
+      sheet1.addEventListener('input', handleFile1, false);
+      sheet2.addEventListener('input', handleFile2, false);
+      </script>
     <script src="bundle.js"></script>
   </body>
 </html>
