@@ -12,7 +12,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 const styles = {
   root: {
     flexGrow: 1,
-    backgroundColor: "blue",
+    backgroundColor: '#212413',
   },
   grow: {
     flexGrow: 1,

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import XLSX from 'xlsx';
 
 export default class Input extends React.Component{
   handleChange(e){
