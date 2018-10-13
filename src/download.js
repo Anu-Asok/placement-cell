@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import XLSX from 'xlsx';
 import {saveAs}  from 'file-saver';
+import Button from '@material-ui/core/Button';
+import SaveIcon from '@material-ui/icons/Save';
 
 export default class Download extends React.Component{
   handleClick(){
@@ -29,15 +31,16 @@ export default class Download extends React.Component{
         return buf;
     }
 
-    
+
     saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), 'test.xlsx');
 
   }
   render(){
     return (
-      <button id="download" onClick={this.handleClick.bind(this)}>
+      <Button variant="contained" size="small" onClick={this.handleClick.bind(this)} style={{margin: 30, fontSize: 15, paddingRight: 20}}>
+        <SaveIcon style={{margin: 10}}/>
         Download
-      </button>
+      </Button>
     );
   }
 }

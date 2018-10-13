@@ -2,6 +2,9 @@ import React from 'react';
 import Form from './form';
 import Download from './download';
 import Preview from './preview';
+import Button from '@material-ui/core/Button';
+import NavigationIcon from '@material-ui/icons/Navigation';
+
 
 export default class Body extends React.Component{
   constructor(){
@@ -9,11 +12,7 @@ export default class Body extends React.Component{
     this.state={
       eligibility:'',
       applied:'',
-      result:[{
-        'REGISTER NO.':'TCR15CS013',
-        'NAME':'Anupam Asok',
-        'COURSE':'B.Tech'
-      }]
+      result:[]
     };
   }
   getEligibility(objects){
@@ -41,7 +40,7 @@ export default class Body extends React.Component{
       if(arr.includes(b[k])){
         result.push(this.state.eligibility[Object.keys(this.state.eligibility)[i]]);
       }
-    }    
+    }
     this.setState({
       result
     });
@@ -51,7 +50,17 @@ export default class Body extends React.Component{
     return (
       <div>
         <Form getEligibility={this.getEligibility.bind(this)} getApplied={this.getApplied.bind(this)}/>
-        <button ref="generate" disabled={!(this.state.eligibility && this.state.applied)} onClick={this.handleClick.bind(this)}>Click for preview</button>
+        <Button
+          variant="extendedFab"
+          aria-label="Delete"
+          style={{margin:30, marginTop:0}}
+          ref="generate"
+          disabled={!(this.state.eligibility && this.state.applied)}
+          onClick={this.handleClick.bind(this)}
+        >
+          Click for preview
+          <NavigationIcon />
+        </Button>
         <Preview result={this.state.result} />
         <Download objects={this.state.result}/>
       </div>

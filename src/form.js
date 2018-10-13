@@ -28,8 +28,8 @@ export default class Form extends React.Component{
   render(){
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <Input parentState={this.props.getEligibility}/>
-        <Input parentState={this.props.getApplied}/>
+        <Input fileName="Eligibility" parentState={this.props.getEligibility}/>
+        <Input fileName="Applied students" parentState={this.props.getApplied}/>
       </form>
     );
   }

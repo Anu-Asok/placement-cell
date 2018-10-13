@@ -2,7 +2,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="app"></div>
@@ -46,15 +46,15 @@
           for(var i =0 ;i<sheetobj1.length;i++){
             var a = sheetobj1[Object.keys(sheetobj1)[i]];
             var key = a[k];
-            obj[key] = a;     
+            obj[key] = a;
           }
           for(var i =0 ;i<sheetobj2.length;i++){
             var a = sheetobj2[Object.keys(sheetobj2)[i]];
             var b = a[k];
             if(obj[b])
               console.table(obj[b]);
-          }  
-          
+          }
+
           // worksheet=XLSX.utils.json_to_sheet(worksheet);
           // workbook.Sheets[first_sheet_name]=worksheet;
           // XLSX.writeFile(workbook, 'out.xlsx');

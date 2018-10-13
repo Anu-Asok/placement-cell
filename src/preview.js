@@ -14,6 +14,8 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import LastPageIcon from '@material-ui/icons/LastPage';
 import TableHead from '@material-ui/core/TableHead';
+import TextField from '@material-ui/core/TextField';
+
 
 const CustomTableCell = withStyles(theme => ({
   head: {
@@ -111,11 +113,14 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3,
   },
   table: {
-    minWidth: 500,
+    maxWidth: '100%',
   },
   tableWrapper: {
     overflowX: 'auto',
   },
+  paper: {
+    maxWidth: '95px'
+  }
 });
 
 class CustomPaginationActionsTable extends React.Component {
@@ -126,6 +131,7 @@ class CustomPaginationActionsTable extends React.Component {
       rows: this.props.result,
       page: 0,
       rowsPerPage: 5,
+      query: ''
     };
   }
 
@@ -137,6 +143,12 @@ class CustomPaginationActionsTable extends React.Component {
     this.setState({ rowsPerPage: event.target.value });
   };
 
+  handleSearchQuery(e){
+    this.setState({
+      query: e.target.value
+    });
+  }
+
   render() {
     const { classes } = this.props;
     var { rows, rowsPerPage, page } = this.state;
@@ -144,9 +156,16 @@ class CustomPaginationActionsTable extends React.Component {
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
     console.log('from preview', rows);
     return (
-      <Paper className={classes.root}>
-        <div className={classes.tableWrapper}>
-          <Table className={classes.table}>
+      <Paper className="Table">
+        <TextField
+          style={{ marginBottom: 20, padding: 20 }}
+          placeholder="Enter the register number"
+          fullWidth
+          margin="normal"
+          onChange={this.handleSearchQuery.bind(this)}
+        />
+        <div className={classes.tableWrapper} style={{padding: 10}}>
+          <Table className={classes.table} >
             <TableHead>
              <TableRow>
                <CustomTableCell>Register No.</CustomTableCell>
@@ -162,7 +181,9 @@ class CustomPaginationActionsTable extends React.Component {
              </TableRow>
            </TableHead>
             <TableBody>
-              {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
+              {rows.filter((obj)=>{
+                  return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase());
+                }).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
                 return (
                   <TableRow key={row['REGISTER NO.']}>
                     <TableCell>{row['REGISTER NO.']}</TableCell>
