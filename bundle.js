@@ -67976,7 +67976,9 @@ var Download = function (_React$Component) {
       };
 
       wb.SheetNames.push("Final Sheet");
-      var ws = _xlsx2.default.utils.json_to_sheet(this.props.objects);
+      var ws_data = [['REGISTER NO.', 'NAME', 'COURSE', 'BRANCH', 'Email', 'Mobile', 'Non core', 'Core', 'Dream', 'Remarks']];
+      var ws = _xlsx2.default.utils.aoa_to_sheet(ws_data);
+      _xlsx2.default.utils.sheet_add_json(ws, this.props.objects);
       wb.Sheets["Final Sheet"] = ws;
 
       var wbout = _xlsx2.default.write(wb, { bookType: 'xlsx', type: 'binary' });
