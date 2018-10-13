@@ -15,7 +15,7 @@ export default class Download extends React.Component{
       Title: "SheetJS",
       Subject: "Final List",
       Author: "Placement Cell",
-      CreatedDate: new Date(2018,10,13)
+      CreatedDate: new Date()
     };
 
     wb.SheetNames.push("Final Sheet");
@@ -32,7 +32,7 @@ export default class Download extends React.Component{
     }
 
 
-    saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), 'test.xlsx');
+    saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), 'Result.xlsx');
 
   }
   render(){
