@@ -1,0 +1,21 @@
+.upload-btn-wrapper{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 20px;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload-icon{
+  margin-left: 5px;
+}
+
+.preview-btn{
+  margin: 80px;
+}
