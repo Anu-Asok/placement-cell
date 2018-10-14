@@ -29,18 +29,27 @@ export default class Body extends React.Component{
     console.log('called applied', this.state.applied);
   }
   handleClick(){
-    var k = 'REGISTER NO.';
+    var k = 'REGISTER NO.', obj;
     var arr = [], result=[];
     for(var i =0 ;i<this.state.applied.length;i++){
       var a = this.state.applied[Object.keys(this.state.applied)[i]];
       arr.push(a[k]);
     }
     for(var i =0 ;i<this.state.eligibility.length;i++){
-      var b = this.state.eligibility[Object.keys(this.state.eligibility)[i]];
-      if(arr.includes(b[k])){
-        result.push(this.state.eligibility[Object.keys(this.state.eligibility)[i]]);
+      var obj = this.state.eligibility[Object.keys(this.state.eligibility)[i]];
+      if(arr.includes(obj[k])){
+        if(!obj['Non core'])
+          obj['Non core']='-';
+        if(!obj['Core'])
+          obj['Core']='-';
+        if(!obj['Dream'])
+          obj['Dream']='-';
+        if(!obj['Remarks'])
+          obj['Remarks']='-';
+        result.push(obj);
       }
     }
+    console.log('from handleClick',result);
     this.setState({
       result
     });

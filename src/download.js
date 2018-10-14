@@ -18,13 +18,27 @@ export default class Download extends React.Component{
       CreatedDate: new Date()
     };
 
-    
+
     wb.SheetNames.push("Final Sheet");
     var ws_data = [['REGISTER NO.','NAME','COURSE','BRANCH','Email','Mobile','Non core','Core','Dream','Remarks']];
+    var data=this.props.objects.map((obj)=>{
+      return [
+        obj['REGISTER NO.'],
+        obj['NAME'],
+        obj['COURSE'],
+        obj['BRANCH'],
+        obj['Email'],
+        obj['Mobile'],
+        obj['Non core'],
+        obj['Core'],
+        obj['Dream'],
+        obj['Remarks']
+      ];
+    });
+    ws_data=ws_data.concat(data);
+    console.log(ws_data);
     var ws = XLSX.utils.aoa_to_sheet(ws_data);
-    XLSX.utils.sheet_add_json(ws,this.props.objects);
     wb.Sheets["Final Sheet"] = ws;
-
     var wbout = XLSX.write(wb, {bookType:'xlsx', type:'binary'});
 
     function s2ab(s){
