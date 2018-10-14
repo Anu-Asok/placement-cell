@@ -68541,6 +68541,67 @@ var CustomPaginationActionsTable = function (_React$Component2) {
       rows = this.props.result;
       var emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
       console.log('from preview', rows);
+      var arr = rows.filter(function (obj) {
+        return obj['REGISTER NO.'].toLowerCase().includes(_this3.state.query.toLowerCase());
+      }).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(function (row) {
+        return _react2.default.createElement(
+          _TableRow2.default,
+          { key: row['REGISTER NO.'] },
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['REGISTER NO.']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['NAME']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['COURSE']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['BRANCH']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['Email']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['Mobile']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['Non core']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['Core']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['Dream']
+          ),
+          _react2.default.createElement(
+            _TableCell2.default,
+            null,
+            row['Remarks']
+          )
+        );
+      });
+      var length = rows.filter(function (obj) {
+        return obj['REGISTER NO.'].toLowerCase().includes(_this3.state.query.toLowerCase());
+      }).length;
       return _react2.default.createElement(
         _Paper2.default,
         { className: 'Table' },
@@ -68618,64 +68679,7 @@ var CustomPaginationActionsTable = function (_React$Component2) {
             _react2.default.createElement(
               _TableBody2.default,
               null,
-              rows.filter(function (obj) {
-                return obj['REGISTER NO.'].toLowerCase().includes(_this3.state.query.toLowerCase());
-              }).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(function (row) {
-                return _react2.default.createElement(
-                  _TableRow2.default,
-                  { key: row['REGISTER NO.'] },
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['REGISTER NO.']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['NAME']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['COURSE']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['BRANCH']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['Email']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['Mobile']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['Non core']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['Core']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['Dream']
-                  ),
-                  _react2.default.createElement(
-                    _TableCell2.default,
-                    null,
-                    row['Remarks']
-                  )
-                );
-              }),
+              arr,
               emptyRows > 0 && _react2.default.createElement(
                 _TableRow2.default,
                 { style: { height: 48 * emptyRows } },
@@ -68690,7 +68694,7 @@ var CustomPaginationActionsTable = function (_React$Component2) {
                 null,
                 _react2.default.createElement(_TablePagination2.default, {
                   colSpan: 10,
-                  count: rows.length,
+                  count: length,
                   rowsPerPage: rowsPerPage,
                   page: page,
                   onChangePage: this.handleChangePage.bind(this),

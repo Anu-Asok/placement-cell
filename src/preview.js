@@ -155,6 +155,27 @@ class CustomPaginationActionsTable extends React.Component {
     rows=this.props.result;
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
     console.log('from preview', rows);
+    var arr=rows.filter((obj)=>{
+        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase());
+      }).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
+      return (
+        <TableRow key={row['REGISTER NO.']}>
+          <TableCell>{row['REGISTER NO.']}</TableCell>
+          <TableCell>{row['NAME']}</TableCell>
+          <TableCell>{row['COURSE']}</TableCell>
+          <TableCell>{row['BRANCH']}</TableCell>
+          <TableCell>{row['Email']}</TableCell>
+          <TableCell>{row['Mobile']}</TableCell>
+          <TableCell>{row['Non core']}</TableCell>
+          <TableCell>{row['Core']}</TableCell>
+          <TableCell>{row['Dream']}</TableCell>
+          <TableCell>{row['Remarks']}</TableCell>
+        </TableRow>
+      );
+    });
+    var length=rows.filter((obj)=>{
+        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase());
+      }).length;
     return (
       <Paper className="Table">
         <TextField
@@ -181,24 +202,7 @@ class CustomPaginationActionsTable extends React.Component {
              </TableRow>
            </TableHead>
             <TableBody>
-              {rows.filter((obj)=>{
-                  return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase());
-                }).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
-                return (
-                  <TableRow key={row['REGISTER NO.']}>
-                    <TableCell>{row['REGISTER NO.']}</TableCell>
-                    <TableCell>{row['NAME']}</TableCell>
-                    <TableCell>{row['COURSE']}</TableCell>
-                    <TableCell>{row['BRANCH']}</TableCell>
-                    <TableCell>{row['Email']}</TableCell>
-                    <TableCell>{row['Mobile']}</TableCell>
-                    <TableCell>{row['Non core']}</TableCell>
-                    <TableCell>{row['Core']}</TableCell>
-                    <TableCell>{row['Dream']}</TableCell>
-                    <TableCell>{row['Remarks']}</TableCell>
-                  </TableRow>
-                );
-              })}
+              {arr}
               {emptyRows > 0 && (
                 <TableRow style={{ height: 48 * emptyRows }}>
                   <TableCell colSpan={6} />
@@ -209,7 +213,7 @@ class CustomPaginationActionsTable extends React.Component {
               <TableRow>
                 <TablePagination
                   colSpan={10}
-                  count={rows.length}
+                  count={length}
                   rowsPerPage={rowsPerPage}
                   page={page}
                   onChangePage={this.handleChangePage.bind(this)}
