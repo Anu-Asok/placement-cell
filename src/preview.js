@@ -156,7 +156,16 @@ class CustomPaginationActionsTable extends React.Component {
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
     console.log('from preview', rows);
     var arr=rows.filter((obj)=>{
-        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase());
+        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase()) || 
+        obj['NAME'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['COURSE'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['BRANCH'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Email'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Non core'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Mobile'].toString().includes(this.state.query.toLowerCase()) ||
+        obj['Core'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Dream'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Remarks'].toLowerCase().includes(this.state.query.toLowerCase());
       }).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
       return (
         <TableRow key={row['REGISTER NO.']}>
