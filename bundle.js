@@ -58455,8 +58455,8 @@ var Body = function (_React$Component) {
           'Click for preview',
           _react2.default.createElement(_Navigation2.default, null)
         ),
-        _react2.default.createElement(_preview2.default, { result: this.state.result }),
-        _react2.default.createElement(_download2.default, { objects: this.state.result })
+        _react2.default.createElement(_download2.default, { objects: this.state.result }),
+        _react2.default.createElement(_preview2.default, { result: this.state.result })
       );
     }
   }]);
@@ -68055,7 +68055,10 @@ var Download = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         _Button2.default,
-        { variant: 'contained', size: 'small', onClick: this.handleClick.bind(this), style: { margin: 30, fontSize: 15, paddingRight: 20 } },
+        {
+          variant: 'extendedFab',
+          onClick: this.handleClick.bind(this),
+          style: { fontSize: 15, paddingRight: 20, marginBottom: 30, marginLeft: 20 } },
         _react2.default.createElement(_Save2.default, { style: { margin: 10 } }),
         'Download'
       );
@@ -68607,7 +68610,7 @@ var CustomPaginationActionsTable = function (_React$Component2) {
         { className: 'Table' },
         _react2.default.createElement(_TextField2.default, {
           style: { marginBottom: 20, padding: 20 },
-          placeholder: 'Enter the register number',
+          placeholder: '\uD83D\uDD0D Search',
           fullWidth: true,
           margin: 'normal',
           onChange: this.handleSearchQuery.bind(this)

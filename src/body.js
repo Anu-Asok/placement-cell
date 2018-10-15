@@ -70,8 +70,8 @@ export default class Body extends React.Component{
           Click for preview
           <NavigationIcon />
         </Button>
-        <Preview result={this.state.result} />
         <Download objects={this.state.result}/>
+        <Preview result={this.state.result} />        
       </div>
     );
   }

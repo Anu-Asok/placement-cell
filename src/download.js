@@ -54,7 +54,10 @@ export default class Download extends React.Component{
   }
   render(){
     return (
-      <Button variant="contained" size="small" onClick={this.handleClick.bind(this)} style={{margin: 30, fontSize: 15, paddingRight: 20}}>
+      <Button 
+        variant="extendedFab"
+        onClick={this.handleClick.bind(this)} 
+        style={{fontSize: 15, paddingRight: 20, marginBottom:30, marginLeft:20}}>
         <SaveIcon style={{margin: 10}}/>
         Download
       </Button>

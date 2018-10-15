@@ -189,7 +189,7 @@ class CustomPaginationActionsTable extends React.Component {
       <Paper className="Table">
         <TextField
           style={{ marginBottom: 20, padding: 20 }}
-          placeholder="Enter the register number"
+          placeholder="🔍 Search"
           fullWidth
           margin="normal"
           onChange={this.handleSearchQuery.bind(this)}
