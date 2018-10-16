@@ -164,7 +164,6 @@ class CustomPaginationActionsTable extends React.Component {
     const { classes } = this.props;
     var { rows, rowsPerPage, page } = this.state;
     rows=this.props.result;
-    console.log('from preview rows',rows)
     var arr1=rows.filter((obj)=>{
         return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['NAME'].toLowerCase().includes(this.state.query.toLowerCase()) ||
@@ -197,6 +196,7 @@ class CustomPaginationActionsTable extends React.Component {
         </TableRow>
       );
     });
+    console.log('preview array',arr);
     this.length=arr1.length;
     return (
       <React.Fragment>
@@ -209,7 +209,7 @@ class CustomPaginationActionsTable extends React.Component {
           margin="normal"
           onChange={this.handleSearchQuery.bind(this)}
         />
-        <div className={classes.tableWrapper} style={{padding: 5}}>
+        <div className={classes.tableWrapper} style={{padding: 5, marginBottom: 80}}>
           <Table className={classes.table} >
             <TableHead>
              <TableRow>

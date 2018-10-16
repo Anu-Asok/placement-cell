@@ -3,7 +3,7 @@ import Form from './form';
 import Preview from './preview';
 import Button from '@material-ui/core/Button';
 import NavigationIcon from '@material-ui/icons/Navigation';
-
+import Footer from './footer';
 
 export default class Body extends React.Component{
   constructor(){
@@ -71,6 +71,7 @@ export default class Body extends React.Component{
           <NavigationIcon />
         </Button>
         <Preview result={this.state.result} />
+        <Footer />
       </div>
     );
   }
