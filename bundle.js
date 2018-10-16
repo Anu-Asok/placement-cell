@@ -58408,22 +58408,23 @@ var Body = function (_React$Component) {
   }, {
     key: 'handleClick',
     value: function handleClick() {
-      var k = 'REGISTER NO.',
-          obj;
-      var arr = [],
+      var k = 'REGISTER NO.';
+      var obj = {},
           result = [];
+      for (var i = 0; i < this.state.eligibility.length; i++) {
+        var a = this.state.eligibility[Object.keys(this.state.eligibility)[i]];
+        var key = a[k];
+        obj[key] = a;
+      }
       for (var i = 0; i < this.state.applied.length; i++) {
         var a = this.state.applied[Object.keys(this.state.applied)[i]];
-        arr.push(a[k]);
-      }
-      for (var i = 0; i < this.state.eligibility.length; i++) {
-        var obj = this.state.eligibility[Object.keys(this.state.eligibility)[i]];
-        if (arr.includes(obj[k])) {
-          if (!obj['Non core']) obj['Non core'] = '-';
-          if (!obj['Core']) obj['Core'] = '-';
-          if (!obj['Dream']) obj['Dream'] = '-';
-          if (!obj['Remarks']) obj['Remarks'] = '-';
-          result.push(obj);
+        var b = a[k];
+        if (obj[b]) {
+          if (!obj[b]['Non core']) obj[b]['Non core'] = '-';
+          if (!obj[b]['Core']) obj[b]['Core'] = '-';
+          if (!obj[b]['Dream']) obj[b]['Dream'] = '-';
+          if (!obj[b]['Remarks']) obj[b]['Remarks'] = '-';
+          result.push(obj[b]);
         }
       }
       console.log('from handleClick', result);
