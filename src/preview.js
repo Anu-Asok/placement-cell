@@ -15,7 +15,10 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import LastPageIcon from '@material-ui/icons/LastPage';
 import TableHead from '@material-ui/core/TableHead';
 import TextField from '@material-ui/core/TextField';
-
+import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormGroup from '@material-ui/core/FormGroup';
+import Download from './download';
 
 const CustomTableCell = withStyles(theme => ({
   head: {
@@ -126,12 +129,14 @@ const styles = theme => ({
 class CustomPaginationActionsTable extends React.Component {
   constructor(props){
     super(props);
-    console.log(this.props.result);
+    this.length=0;
+    console.log('from preview constructor',this.props.result);
     this.state = {
       rows: this.props.result,
       page: 0,
-      rowsPerPage: 5,
-      query: ''
+      rowsPerPage: 50,
+      query: '',
+      displayAll: false
     };
   }
 
@@ -149,14 +154,19 @@ class CustomPaginationActionsTable extends React.Component {
     });
   }
 
+  handleToggle(e){
+    this.setState({
+      displayAll: !this.state.displayAll
+    });
+  }
+
   render() {
     const { classes } = this.props;
     var { rows, rowsPerPage, page } = this.state;
     rows=this.props.result;
-    const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
-    console.log('from preview', rows);
-    var arr=rows.filter((obj)=>{
-        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase()) || 
+    console.log('from preview rows',rows)
+    var arr1=rows.filter((obj)=>{
+        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['NAME'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['COURSE'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['BRANCH'].toLowerCase().includes(this.state.query.toLowerCase()) ||
@@ -166,9 +176,14 @@ class CustomPaginationActionsTable extends React.Component {
         obj['Core'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['Dream'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['Remarks'].toLowerCase().includes(this.state.query.toLowerCase());
-      }).slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => {
+      });
+    var arr=
+      (this.state.displayAll
+      ? arr1
+      : arr1.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage))
+      .map(row => {
       return (
-        <TableRow key={row['REGISTER NO.']}>
+        <TableRow key={row['REGISTER NO.']} className="set-padding">
           <TableCell>{row['REGISTER NO.']}</TableCell>
           <TableCell>{row['NAME']}</TableCell>
           <TableCell>{row['COURSE']}</TableCell>
@@ -182,19 +197,19 @@ class CustomPaginationActionsTable extends React.Component {
         </TableRow>
       );
     });
-    var length=rows.filter((obj)=>{
-        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase());
-      }).length;
+    this.length=arr1.length;
     return (
+      <React.Fragment>
+      <Download style={{display:'inline-block'}} objects={arr1}/>
       <Paper className="Table">
         <TextField
           style={{ marginBottom: 20, padding: 20 }}
-          placeholder="🔍 Search"
+          placeholder="Search"
           fullWidth
           margin="normal"
           onChange={this.handleSearchQuery.bind(this)}
         />
-        <div className={classes.tableWrapper} style={{padding: 10}}>
+        <div className={classes.tableWrapper} style={{padding: 5}}>
           <Table className={classes.table} >
             <TableHead>
              <TableRow>
@@ -212,28 +227,48 @@ class CustomPaginationActionsTable extends React.Component {
            </TableHead>
             <TableBody>
               {arr}
-              {emptyRows > 0 && (
-                <TableRow style={{ height: 48 * emptyRows }}>
-                  <TableCell colSpan={6} />
-                </TableRow>
-              )}
             </TableBody>
             <TableFooter>
               <TableRow>
+                <td>
+                <FormGroup row>
+                  <FormControlLabel
+                    control={
+                      <Switch
+                        checked={this.state.displayAll}
+                        onChange={this.handleToggle.bind(this)}
+                        value="Display All"
+                        color="primary"
+                      />
+                    }
+                    label="Display All"
+                  />
+                </FormGroup>
+              </td>
                 <TablePagination
                   colSpan={10}
-                  count={length}
-                  rowsPerPage={rowsPerPage}
+                  count={this.length}
+                  rowsPerPage={
+                    this.state.displayAll
+                     ? this.length
+                     : this.state.rowsPerPage
+                  }
                   page={page}
                   onChangePage={this.handleChangePage.bind(this)}
+                  rowsPerPageOptions={[50,100,200]}
                   onChangeRowsPerPage={this.handleChangeRowsPerPage.bind(this)}
                   ActionsComponent={TablePaginationActionsWrapped}
-                />
+                  style={{
+                    pointerEvents:this.state.displayAll?'none':'unset'
+                  }}
+                >
+                </TablePagination>
               </TableRow>
             </TableFooter>
           </Table>
         </div>
       </Paper>
+    </React.Fragment>
     );
   }
 }

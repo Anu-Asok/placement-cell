@@ -19,4 +19,9 @@
 .preview-btn{
   margin: 80px;
 }
- 
+
+
+.set-padding>td{
+  padding: 4px 9px 4px 9px !important;
+  word-break: break-all;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Form from './form';
-import Download from './download';
 import Preview from './preview';
 import Button from '@material-ui/core/Button';
 import NavigationIcon from '@material-ui/icons/Navigation';
@@ -70,8 +69,7 @@ export default class Body extends React.Component{
           Click for preview
           <NavigationIcon />
         </Button>
-        <Download objects={this.state.result}/>
-        <Preview result={this.state.result} />        
+        <Preview result={this.state.result} />
       </div>
     );
   }
