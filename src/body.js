@@ -49,6 +49,15 @@ export default class Body extends React.Component{
           obj[b]['Remarks']='-';
         result.push(obj[b]);
       }
+      else{
+        a['Email']='-',
+        a['Mobile']='-',
+        a['Non core']='-',
+        a['Core']='-',
+        a['Dream']='-',
+        a['Remarks']='Absent in eligibility'
+        result.push(a);
+      }
     }
     console.log('from handleClick',result);
     this.setState({
