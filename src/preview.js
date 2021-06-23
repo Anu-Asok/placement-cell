@@ -170,7 +170,9 @@ class CustomPaginationActionsTable extends React.Component {
         obj['COURSE'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['BRANCH'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['Email'].toLowerCase().includes(this.state.query.toLowerCase()) ||
-        obj['Non core'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Non core 1'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Non core 2'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        obj['Non core 3'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['Mobile'].toString().includes(this.state.query.toLowerCase()) ||
         obj['Core'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['Dream'].toLowerCase().includes(this.state.query.toLowerCase()) ||
@@ -189,7 +191,9 @@ class CustomPaginationActionsTable extends React.Component {
           <TableCell>{row['BRANCH']}</TableCell>
           <TableCell>{row['Email']}</TableCell>
           <TableCell>{row['Mobile']}</TableCell>
-          <TableCell>{row['Non core']}</TableCell>
+          <TableCell>{row['Non core 1']}</TableCell>
+          <TableCell>{row['Non core 2']}</TableCell>
+          <TableCell>{row['Non core 3']}</TableCell>
           <TableCell>{row['Core']}</TableCell>
           <TableCell>{row['Dream']}</TableCell>
           <TableCell>{row['Remarks']}</TableCell>
@@ -219,7 +223,9 @@ class CustomPaginationActionsTable extends React.Component {
                <CustomTableCell>Branch</CustomTableCell>
                <CustomTableCell>Email</CustomTableCell>
                <CustomTableCell>Mobile</CustomTableCell>
-               <CustomTableCell>Non core</CustomTableCell>
+               <CustomTableCell>Non core 1</CustomTableCell>
+               <CustomTableCell>Non core 2</CustomTableCell>
+               <CustomTableCell>Non core 3</CustomTableCell>
                <CustomTableCell>Core</CustomTableCell>
                <CustomTableCell>Dream</CustomTableCell>
                <CustomTableCell>Remarks</CustomTableCell>
