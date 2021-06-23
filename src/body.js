@@ -39,8 +39,12 @@ export default class Body extends React.Component{
       var a = this.state.applied[Object.keys(this.state.applied)[i]];
       var b = a[k];
       if(obj[b]){
-        if(!obj[b]['Non core'])
-          obj[b]['Non core']='-';
+        if(!obj[b]['Non core 1'])
+          obj[b]['Non core 1']='-';
+        if(!obj[b]['Non core 2'])
+          obj[b]['Non core 2']='-';
+        if(!obj[b]['Non core 3'])
+          obj[b]['Non core 3']='-';  
         if(!obj[b]['Core'])
           obj[b]['Core']='-';
         if(!obj[b]['Dream'])
@@ -52,7 +56,9 @@ export default class Body extends React.Component{
       else{
         a['Email']='-',
         a['Mobile']='-',
-        a['Non core']='-',
+        a['Non core 1']='-',
+        a['Non core 2']='-',
+        a['Non core 3']='-',
         a['Core']='-',
         a['Dream']='-',
         a['Remarks']='Absent in eligibility'
