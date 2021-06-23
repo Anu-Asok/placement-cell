@@ -20,7 +20,7 @@ export default class Download extends React.Component{
 
 
     wb.SheetNames.push("Final Sheet");
-    var ws_data = [['REGISTER NO.','NAME','COURSE','BRANCH','Email','Mobile','Non core','Core','Dream','Remarks']];
+    var ws_data = [['REGISTER NO.','NAME','COURSE','BRANCH','Email','Mobile','Non core 1','Non core 2','Non core 3','Core','Dream','Remarks']];
     var data=this.props.objects.map((obj)=>{
       return [
         obj['REGISTER NO.'],
@@ -29,7 +29,9 @@ export default class Download extends React.Component{
         obj['BRANCH'],
         obj['Email'],
         obj['Mobile'],
-        obj['Non core'],
+        obj['Non core 1'],
+        obj['Non core 2'],
+        obj['Non core 3'],
         obj['Core'],
         obj['Dream'],
         obj['Remarks']
