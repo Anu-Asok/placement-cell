@@ -165,7 +165,8 @@ class CustomPaginationActionsTable extends React.Component {
     var { rows, rowsPerPage, page } = this.state;
     rows=this.props.result;
     var arr1=rows.filter((obj)=>{
-        return obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase()) ||
+        return (obj['SL.NO'] != undefined ? obj['SL.NO'].toString().includes(this.state.query.toLowerCase()) : "") ||
+        obj['REGISTER NO.'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['NAME'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['COURSE'].toLowerCase().includes(this.state.query.toLowerCase()) ||
         obj['BRANCH'].toLowerCase().includes(this.state.query.toLowerCase()) ||
@@ -185,6 +186,7 @@ class CustomPaginationActionsTable extends React.Component {
       .map(row => {
       return (
         <TableRow key={row['REGISTER NO.']} className="set-padding">
+          <TableCell>{row['SL.NO']}</TableCell>
           <TableCell>{row['REGISTER NO.']}</TableCell>
           <TableCell>{row['NAME']}</TableCell>
           <TableCell>{row['COURSE']}</TableCell>
@@ -217,6 +219,7 @@ class CustomPaginationActionsTable extends React.Component {
           <Table className={classes.table} >
             <TableHead>
              <TableRow>
+               <CustomTableCell>Sl.No (Eligibility)</CustomTableCell>
                <CustomTableCell>Register No.</CustomTableCell>
                <CustomTableCell>Name</CustomTableCell>
                <CustomTableCell>Course</CustomTableCell>
