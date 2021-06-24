@@ -5,11 +5,7 @@ export default class Footer extends React.Component{
   render(){
     return (
       <div className="footer" style={{
-        marginTop: 20,
-        paddingTop: 20,
-        paddingBottom: 20,
-        paddingTop: 20,
-        textAlign: 'center',
+        padding: 20,
         bottom: 0,
         color: '#636363',
         backgroundColor: 'white',
@@ -20,6 +16,7 @@ export default class Footer extends React.Component{
       }}
       >
         Developed by <a href="https://github.com/Anu-Asok/">Anupam Asok</a> and <a href="https://github.com/jashi202jg">Jashim Gafoor K K </a>
+        <span style={{float: 'right'}}>Support: <a href="mailto:jashi202jg@gmail.com">jashi202jg@gmail.com</a></span>
       </div>
     );
   }
